@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/home_button"
+        android:id="@+id/home"
+        />
+    <item android:title="Catalog"
+        android:icon="@drawable/master_catalog"
+        android:id="@+id/Master_Catalog"
+        />
+    <item android:title="Inventory"
+        android:icon="@drawable/inventory_module"
+        android:id="@+id/Inventory_Log"
+        />
+    <item android:title="Audit"
+        android:icon="@drawable/audit_log"
+        android:id="@+id/Audit_log"
+        />
+</menu>
