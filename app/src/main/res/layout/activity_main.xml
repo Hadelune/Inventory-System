@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#013464"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -16,17 +17,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/archivo_black"
+            android:text="Hello and Welcome User!"
+            android:textColor="#FFFCFC"
+            android:textColorLink="#F8F8F8"
+            android:textSize="48sp" />
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FAC707"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="#141414"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom__navmenu"
-        >
+        app:menu="@menu/bottom__navmenu">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 </androidx.constraintlayout.widget.ConstraintLayout>
