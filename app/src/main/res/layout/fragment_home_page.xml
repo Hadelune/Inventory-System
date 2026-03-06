@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1a1a1a"
+    android:padding="16dp"
+    tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="Hello, and Welcome User!"
+        android:textColor="#ffe32a"
+        android:textSize="38sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- Item 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:background="#4A5FD9"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Category"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore items"
+                android:textColor="#E0E0E0"
+                android:textSize="11sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- Item 2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:background="#17C89F"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Apps"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore apps"
+                android:textColor="#E0E0E0"
+                android:textSize="11sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

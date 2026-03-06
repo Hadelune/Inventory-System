@@ -16,17 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:fontFamily="@font/archivo_black"
-            android:text="Hello and Welcome User!"
-            android:textColor="#FFFCFC"
-            android:textColorLink="#F8F8F8"
-            android:textSize="48sp" />
+        
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

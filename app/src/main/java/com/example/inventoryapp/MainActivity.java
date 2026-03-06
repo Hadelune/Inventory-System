@@ -33,13 +33,13 @@ public class MainActivity extends AppCompatActivity {
 
         //A.I GENERATED NEED TO LEARN HOW THE FRAGMENTS WORKS AS OF NOW
         if (savedInstanceState == null) {
-            replaceFragment(new HomeFragment());
+            replaceFragment(new HomePage());
         }
 
         //A.I GENERATED NEED TO LEARN HOW THE FRAGMENTS WORKS AS OF NOW
         binding.bottomNavigationView2.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.home) {
-                replaceFragment(new HomeFragment());
+                replaceFragment(new HomePage());
                 return true;
             } else if (item.getItemId() == R.id.master_catalog) {
                 Toast.makeText(MainActivity.this, "Coming soon!", Toast.LENGTH_SHORT).show();
