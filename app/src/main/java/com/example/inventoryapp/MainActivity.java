@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openInventoryLog() {
         Intent intent = new Intent(this, InventoryLog.class);
-        intent.putExtra("greeting", "hello");
         startActivity(intent);
     }
 }
