@@ -1,5 +1,6 @@
 package com.example.inventoryapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -31,18 +32,16 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        //A.I GENERATED NEED TO LEARN HOW THE FRAGMENTS WORKS AS OF NOW
         if (savedInstanceState == null) {
             replaceFragment(new HomePage());
         }
 
-        //A.I GENERATED NEED TO LEARN HOW THE FRAGMENTS WORKS AS OF NOW
         binding.bottomNavigationView2.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.home) {
                 replaceFragment(new HomePage());
                 return true;
             } else if (item.getItemId() == R.id.master_catalog) {
-                Toast.makeText(MainActivity.this, "Coming soon!", Toast.LENGTH_SHORT).show();
+                replaceFragment(new MasterCatalog());
                 return true;
             } else if (item.getItemId() == R.id.inventory_log) {
                 Toast.makeText(MainActivity.this, "Coming soon!", Toast.LENGTH_SHORT).show();
@@ -55,7 +54,16 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    //A.I GENERATED NEED TO LEARN HOW THE FRAGMENTS WORKS AS OF NOW
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 101 && resultCode == RESULT_OK && data != null) {
+            String barcodeResult = data.getStringExtra("barcode_result");
+            Toast.makeText(this, "Scanned: " + barcodeResult, Toast.LENGTH_SHORT).show();
+        }
+    }
+
     private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
