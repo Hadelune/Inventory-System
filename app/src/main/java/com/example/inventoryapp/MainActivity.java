@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 replaceFragment(new MasterCatalog());
                 return true;
             } else if (item.getItemId() == R.id.inventory_log) {
-                Toast.makeText(MainActivity.this, "Coming soon!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, InventoryLog.class);
+                startActivity(intent);
                 return true;
             } else if (item.getItemId() == R.id.audit_log) {
                 replaceFragment(new Audit_Log());
