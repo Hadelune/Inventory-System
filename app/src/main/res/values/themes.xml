@@ -6,4 +6,13 @@
     </style>
 
     <style name="Theme.InventoryApp" parent="Base.Theme.InventoryApp" />
+
+    <style name="Theme.InventoryApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.InventoryApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.InventoryApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
